@@ -1,0 +1,50 @@
+.category-list {
+  list-style: none;
+  padding: 0;
+  li {
+    padding: 10px;
+  }
+}
+.grid-recetas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  margin: 0 auto;
+  max-width: 1200px;
+  list-style: none;
+}
+
+.grid-recetas li {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.grid-recetas li:hover {
+  transform: translateY(-5px);
+}
+
+.grid-recetas a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.grid-recetas img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+  border-bottom: 1px solid #ddd;
+}
+
+.grid-recetas h3 {
+  font-size: 1.1rem;
+  text-align: center;
+  padding: 1rem;
+  margin: 0;
+  color: #333;
+}

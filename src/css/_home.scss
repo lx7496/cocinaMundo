@@ -1,0 +1,17 @@
+.home {
+  text-align: center;
+  padding: 20px;
+  background-color: #f4f4f4;
+  h2 {
+    color: #333;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+}
+.buttonsChange {
+  display: flex;
+  max-width: fit-content;
+  margin-bottom: 15px;
+  gap: 40px;
+}

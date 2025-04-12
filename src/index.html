@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cocina del Mundo</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script type="module" src="js/script.mjs"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Cocina del Mundo</h1>
+      <nav>
+        <button class="menuToggle">☰ Menú</button>
+        <ul id="menu" class="hidden">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="categoria.html">Categorías</a></li>
+          <li><a href="enlaces.html">Enlaces</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h2>Explora la Cocina Internacional</h2>
+        <p>
+          Descubre recetas, ingredientes y tradiciones culinarias de todo el
+          mundo.
+        </p>
+        <div class="buttonsChange">
+          <button id="changeTheme">Cambiar Tema</button>
+          <button id="changeLanguage">Cambiar Idioma</button>
+        </div>
+      </section>
+
+      <section id="carousel">
+        <img id="carouselImage" src="img/food1.jpg" alt="Plato internacional" />
+        <button id="prevImage">◀</button>
+        <button id="nextImage">▶</button>
+      </section>
+
+      <section>
+        <h3>Reserva tu mesa</h3>
+        <form id="reservationForm">
+          <label for="name">Nombre:</label>
+          <input type="text" id="name" required />
+          <label for="email">Email:</label>
+          <input type="email" id="email" required />
+          <button type="submit">Reservar</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Cocina del Mundo - Todos los derechos reservados</p>
+    </footer>
+  </body>
+</html>

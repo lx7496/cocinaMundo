@@ -1,0 +1,28 @@
+{
+  "name": "cocina-del-mundo",
+  "version": "1.0.0",
+  "description": "Proyecto para PAC1",
+  "type": "module",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "devDependencies": {
+    "parcel": "^2.10.0",
+    "sass": "^1.69.0"
+  },
+  "browserslist": [
+    "defaults",
+    "not IE 11"
+  ],
+  "targets": {
+    "default": {
+      "publicUrl": "./",
+      "distDir": "dist",
+      "includeNodeModules": true
+    }
+  },
+  "dependencies": {
+    "cocina-del-mundo": "file:"
+  }
+}
