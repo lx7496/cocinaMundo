@@ -6,8 +6,6 @@
     <title>Sushi Japonés - Cocina del Mundo</title>
     <link rel="stylesheet" href="css/styles.css" />
     <script type="module" src="js/script.mjs"></script>
-
-
   </head>
   <body>
     <header>
@@ -19,15 +17,20 @@
           <li><a href="categoria.html">Categorías</a></li>
           <li><a href="enlaces.html">Enlaces</a></li>
         </ul>
+      </nav>
     </header>
 
     <main>
       <section>
-        <img
-          src="img/sushi.jpeg"
-          alt="Sushi Japonés"
-          style="width: 100%; max-height: 400px; object-fit: cover"
-        />
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/web/sushi.webp" />
+          <source media="(min-width: 768px)" srcset="img/tablet/sushi.webp" />
+          <img
+            src="img/mobile/sushi.jpeg"
+            alt="Sushi Japonés"
+            style="width: 100%; max-height: 400px; object-fit: cover"
+          />
+        </picture>
       </section>
 
       <section style="padding: 1rem; max-width: 800px; margin: auto">
@@ -56,25 +59,48 @@
           padding: 1rem;
         "
       >
-        <img
-          src="img/sushi1.jpg"
-          alt="Nigiri"
-          style="width: 30%; min-width: 200px"
-        />
-        <img
-          src="img/sushi2.jpg"
-          alt="Maki"
-          style="width: 30%; min-width: 200px"
-        />
-        <img
-          src="img/sushi3.webp"
-          alt="Sushi decorado"
-          style="width: 30%; min-width: 200px"
-        />
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/web/sushi1.webp" />
+          <source media="(min-width: 768px)" srcset="img/tablet/sushi1.webp" />
+          <img
+            src="img/mobile/sushi1.jpg"
+            alt="Nigiri"
+            style="width: 30%; min-width: 200px"
+          />
+        </picture>
+
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/web/sushi2.webp" />
+          <source media="(min-width: 768px)" srcset="img/tablet/sushi2.webp" />
+          <img
+            src="img/mobile/sushi2.jpg"
+            alt="Maki"
+            style="width: 30%; min-width: 200px"
+          />
+        </picture>
+
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/web/sushi3.webp" />
+          <source media="(min-width: 768px)" srcset="img/tablet/sushi3.webp" />
+          <img
+            src="img/mobile/sushi3.webp"
+            alt="Sushi decorado"
+            style="width: 30%; min-width: 200px"
+          />
+        </picture>
       </section>
 
       <section style="padding: 1rem; max-width: 800px; margin: auto">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/HntGAHRFjUE?si=8xgfA4D92osDLE4Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/HntGAHRFjUE?si=8xgfA4D92osDLE4Q"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
       </section>
     </main>
 

@@ -26,19 +26,55 @@
         <ul class="grid-recetas">
           <li>
             <a href="detalle-paella.html">
-              <img src="img/paella-thumbnail.jpg" alt="Paella Valenciana" />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="img/web/paella-thumbnail.jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="img/tablet/paella-thumbnail.jpg"
+                />
+                <img
+                  src="img/mobile/paella-thumbnail.jpg"
+                  alt="Paella Valenciana"
+                />
+              </picture>
               <h3>Paella Valenciana</h3>
             </a>
           </li>
           <li>
             <a href="detalle-sushi.html">
-              <img src="img/sushi-thumbnail.jpg" alt="Sushi Japonés" />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="img/web/sushi-thumbnail.jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="img/tablet/sushi-thumbnail.jpg"
+                />
+                <img src="img/mobile/sushi-thumbnail.jpg" alt="Sushi Japonés" />
+              </picture>
               <h3>Sushi Japonés</h3>
             </a>
           </li>
           <li>
             <a href="detalle-tacos.html">
-              <img src="img/tacos-thumbnail.jpeg" alt="Tacos Mexicanos" />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="img/web/tacos-thumbnail.jpeg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="img/tablet/tacos-thumbnail.jpeg"
+                />
+                <img
+                  src="img/mobile/tacos-thumbnail.jpeg"
+                  alt="Tacos Mexicanos"
+                />
+              </picture>
               <h3>Tacos Mexicanos</h3>
             </a>
           </li>

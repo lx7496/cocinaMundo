@@ -36,11 +36,12 @@ button {
 
 #carousel img {
   width: 80%;
-  max-width: 600px;
-  height: 400px;
   border-radius: 10px;
 }
 
+#carousel picture {
+  display: contents;
+}
 #carousel button {
   position: absolute;
   background: rgba(0, 0, 0, 0.5);
@@ -55,4 +56,42 @@ button {
 }
 #nextImage {
   right: 10px;
+}
+.clip-image {
+  width: 120px;
+  height: auto;
+  clip-path: polygon(
+    50% 0%,
+    58% 6%,
+    66% 5%,
+    74% 10%,
+    82% 15%,
+    87% 24%,
+    92% 32%,
+    95% 42%,
+    95% 50%,
+    95% 58%,
+    92% 68%,
+    87% 76%,
+    82% 85%,
+    74% 90%,
+    66% 95%,
+    58% 94%,
+    50% 100%,
+    42% 94%,
+    34% 95%,
+    26% 90%,
+    18% 85%,
+    13% 76%,
+    8% 68%,
+    5% 58%,
+    5% 50%,
+    5% 42%,
+    8% 32%,
+    13% 24%,
+    18% 15%,
+    26% 10%,
+    34% 5%,
+    42% 6%
+  );
 }

@@ -18,11 +18,20 @@
     </header>
 
     <main>
-      <img
-        src="img/paella-big.jpg"
-        alt="Paella Valenciana"
-        style="width: 100%; max-height: 400px; object-fit: cover"
-      />
+      <section>
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/web/paella-big.jpg" />
+          <source
+            media="(min-width: 768px)"
+            srcset="img/tablet/paella-big.jpg"
+          />
+          <img
+            src="img/mobile/paella-big.jpg"
+            alt="Paella Valenciana"
+            style="width: 100%; max-height: 400px; object-fit: cover"
+          />
+        </picture>
+      </section>
 
       <section class="detalle-texto">
         <p>
@@ -43,9 +52,22 @@
       </section>
 
       <section class="detalle-galeria">
-        <img src="img/paella1.jpg" alt="Preparación de la paella" />
-        <img src="img/paella2.jpg" alt="Ingredientes de la paella" />
-        <img src="img/paella3.jpg" alt="Paella lista para servir" />
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/web/paella1.jpg" />
+          <source media="(min-width: 768px)" srcset="img/tablet/paella1.jpg" />
+          <source media="(max-width: 768px)" srcset="img/mobile/paella1.jpg" />
+          <img src="" alt="Preparación de la paella" />
+        </picture>
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/web/paella2.jpg" />
+          <source media="(min-width: 768px)" srcset="img/tablet/paella2.jpg" />
+          <img src="img/mobile/paella2.jpg" alt="Ingredientes de la paella" />
+        </picture>
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/web/paella3.jpg" />
+          <source media="(min-width: 768px)" srcset="img/tablet/paella3.jpg" />
+          <img src="img/mobile/paella3.jpg" alt="Paella lista para servir" />
+        </picture>
       </section>
 
       <section class="detalle-video">

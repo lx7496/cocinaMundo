@@ -23,11 +23,15 @@
     <main>
       <!-- Imagen destacada -->
       <section>
-        <img
-          src="img/paella.jpg"
-          alt="Paella Valenciana"
-          style="width: 100%; max-height: 400px; object-fit: cover"
-        />
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/web/paella.jpg" />
+          <source media="(min-width: 768px)" srcset="img/tablet/paella.jpg" />
+          <img
+            src="img/mobile/paella.jpg"
+            alt="Paella Valenciana"
+            style="width: 100%; max-height: 400px; object-fit: cover"
+          />
+        </picture>
       </section>
 
       <!-- Texto descriptivo -->
@@ -63,21 +67,53 @@
           padding: 1rem;
         "
       >
-        <img
-          src="img/paella-step1.jpg"
-          alt="Preparando la paella"
-          style="width: 30%; min-width: 200px"
-        />
-        <img
-          src="img/paella-step2.jpg"
-          alt="Ingredientes de la paella"
-          style="width: 30%; min-width: 200px"
-        />
-        <img
-          src="img/paella-step3.jpg"
-          alt="Paella servida"
-          style="width: 30%; min-width: 200px"
-        />
+        <picture>
+          <source
+            media="(min-width: 1200px)"
+            srcset="img/web/paella-step1.jpg"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="img/tablet/paella-step1.jpg"
+          />
+          <img
+            src="img/mobile/paella-step1.jpg"
+            alt="Preparando la paella"
+            style="width: 30%; min-width: 200px"
+          />
+        </picture>
+
+        <picture>
+          <source
+            media="(min-width: 1200px)"
+            srcset="img/web/paella-step2.jpg"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="img/tablet/paella-step2.jpg"
+          />
+          <img
+            src="img/mobile/paella-step2.jpg"
+            alt="Ingredientes de la paella"
+            style="width: 30%; min-width: 200px"
+          />
+        </picture>
+
+        <picture>
+          <source
+            media="(min-width: 1200px)"
+            srcset="img/web/paella-step3.jpg"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="img/tablet/paella-step3.jpg"
+          />
+          <img
+            src="img/mobile/paella-step3.jpg"
+            alt="Paella servida"
+            style="width: 30%; min-width: 200px"
+          />
+        </picture>
       </section>
 
       <!-- Video -->

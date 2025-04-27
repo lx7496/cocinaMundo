@@ -668,12 +668,24 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 
 },{}],"fcphp":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-var _food1Jpg = require("../img/food1.jpg");
-var _food1JpgDefault = parcelHelpers.interopDefault(_food1Jpg);
-var _food2Jpg = require("../img/food2.jpg");
-var _food2JpgDefault = parcelHelpers.interopDefault(_food2Jpg);
-var _food3Jpg = require("../img/food3.jpg");
-var _food3JpgDefault = parcelHelpers.interopDefault(_food3Jpg);
+var _food1JpgUrl = require("../img/web/food1.jpg?url");
+var _food1JpgUrlDefault = parcelHelpers.interopDefault(_food1JpgUrl);
+var _food1JpgUrl1 = require("../img/tablet/food1.jpg?url");
+var _food1JpgUrlDefault1 = parcelHelpers.interopDefault(_food1JpgUrl1);
+var _food1JpgUrl2 = require("../img/mobile/food1.jpg?url");
+var _food1JpgUrlDefault2 = parcelHelpers.interopDefault(_food1JpgUrl2);
+var _food2JpgUrl = require("../img/web/food2.jpg?url");
+var _food2JpgUrlDefault = parcelHelpers.interopDefault(_food2JpgUrl);
+var _food2JpgUrl1 = require("../img/tablet/food2.jpg?url");
+var _food2JpgUrlDefault1 = parcelHelpers.interopDefault(_food2JpgUrl1);
+var _food2JpgUrl2 = require("../img/mobile/food2.jpg?url");
+var _food2JpgUrlDefault2 = parcelHelpers.interopDefault(_food2JpgUrl2);
+var _food3JpgUrl = require("../img/web/food3.jpg?url");
+var _food3JpgUrlDefault = parcelHelpers.interopDefault(_food3JpgUrl);
+var _food3JpgUrl1 = require("../img/tablet/food3.jpg?url");
+var _food3JpgUrlDefault1 = parcelHelpers.interopDefault(_food3JpgUrl1);
+var _food3JpgUrl2 = require("../img/mobile/food3.jpg?url");
+var _food3JpgUrlDefault2 = parcelHelpers.interopDefault(_food3JpgUrl2);
 document.addEventListener("DOMContentLoaded", function() {
     console.log("JavaScript loaded correctly");
     const changeThemeButton = document.getElementById("changeTheme");
@@ -692,24 +704,54 @@ document.addEventListener("DOMContentLoaded", function() {
     });
     // Carousel
     const images = [
-        "food1.1599379e.jpg",
-        "food2.56d2901a.jpg",
-        "food3.ab8b773a.jpg"
+        {
+            desktop: "food1.2af74394.jpg",
+            tablet: "food1.03c048fb.jpg",
+            mobile: "food1.9b1f0e3c.jpg",
+            alt: "Plato internacional 1"
+        },
+        {
+            desktop: "food2.b9cc44e9.jpg",
+            tablet: "food2.bf934ef7.jpg",
+            mobile: "food2.48e7b797.jpg",
+            alt: "Plato internacional 2"
+        },
+        {
+            desktop: "food3.13730377.jpg",
+            tablet: "food3.de0e1dd4.jpg",
+            mobile: "food3.9bc939cc.jpg",
+            alt: "Plato internacional 3"
+        }
     ];
+    console.log("Ruta de imagen:", (0, _food1JpgUrlDefault.default));
     let currentIndex = 0;
-    const carouselImage = document.getElementById("carouselImage");
+    const sourceDesktop = document.getElementById("carouselSourceDesktop");
+    const sourceTablet = document.getElementById("carouselSourceTablet");
+    const sourceMobile = document.getElementById("carouselSourceMobile");
     const prevButton = document.getElementById("prevImage");
     const nextButton = document.getElementById("nextImage");
-    if (carouselImage && prevButton && nextButton) {
-        prevButton.addEventListener("click", ()=>{
-            currentIndex = (currentIndex - 1 + images.length) % images.length;
-            carouselImage.src = images[currentIndex];
-        });
-        nextButton.addEventListener("click", ()=>{
-            currentIndex = (currentIndex + 1) % images.length;
-            carouselImage.src = images[currentIndex];
-        });
+    function getPath(imageObj) {
+        // Parcel a veces devuelve un objeto con .default
+        return typeof imageObj === "object" ? imageObj.default : imageObj;
     }
+    function updateCarousel(index) {
+        const image = images[index];
+        if (sourceDesktop && sourceTablet && carouselImage) {
+            sourceDesktop.srcset = getPath(image.desktop);
+            sourceTablet.srcset = getPath(image.tablet);
+            sourceMobile.srcset = getPath(image.mobile);
+            carouselImage.alt = image.alt;
+        }
+    }
+    prevButton?.addEventListener("click", ()=>{
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        updateCarousel(currentIndex);
+    });
+    nextButton?.addEventListener("click", ()=>{
+        currentIndex = (currentIndex + 1) % images.length;
+        updateCarousel(currentIndex);
+    });
+    updateCarousel(currentIndex);
     // Reservation form
     const reservationForm = document.getElementById("reservationForm");
     if (reservationForm) reservationForm.addEventListener("submit", (event)=>{
@@ -718,7 +760,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-},{"../img/food1.jpg":"8F2gE","../img/food2.jpg":"JPkNE","../img/food3.jpg":"jPIob","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"8F2gE":[function() {},{}],"JPkNE":[function() {},{}],"jPIob":[function() {},{}],"jnFvT":[function(require,module,exports,__globalThis) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","../img/mobile/food1.jpg?url":"l8fFb","../img/mobile/food2.jpg?url":"4Un28","../img/mobile/food3.jpg?url":"eTkcv","../img/web/food1.jpg?url":"7uobr","../img/tablet/food1.jpg?url":"8ZJWA","../img/web/food2.jpg?url":"i3IIM","../img/tablet/food2.jpg?url":"h8Krt","../img/web/food3.jpg?url":"aniRn","../img/tablet/food3.jpg?url":"c5w4A"}],"jnFvT":[function(require,module,exports,__globalThis) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -748,6 +790,6 @@ exports.export = function(dest, destName, get) {
     });
 };
 
-},{}]},["3c0YU","fcphp"], "fcphp", "parcelRequire0f01", {})
+},{}],"l8fFb":[function() {},{}],"4Un28":[function() {},{}],"eTkcv":[function() {},{}],"7uobr":[function() {},{}],"8ZJWA":[function() {},{}],"i3IIM":[function() {},{}],"h8Krt":[function() {},{}],"aniRn":[function() {},{}],"c5w4A":[function() {},{}]},["3c0YU","fcphp"], "fcphp", "parcelRequire0f01", {})
 
 //# sourceMappingURL=PAC1.036bd4f0.js.map

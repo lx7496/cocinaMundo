@@ -22,11 +22,21 @@
 
     <main>
       <section>
-        <img
-          src="img/tacos-al-pastor.webp"
-          alt="Tacos Mexicanos"
-          style="width: 100%; max-height: 400px; object-fit: cover"
-        />
+        <picture>
+          <source
+            media="(min-width: 1200px)"
+            srcset="img/web/tacos-al-pastor.webp"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="img/tablet/tacos-al-pastor.webp"
+          />
+          <img
+            src="img/mobile/tacos-al-pastor.webp"
+            alt="Tacos Mexicanos"
+            style="width: 100%; max-height: 400px; object-fit: cover"
+          />
+        </picture>
       </section>
 
       <section style="padding: 1rem; max-width: 800px; margin: auto">
@@ -53,21 +63,35 @@
           padding: 1rem;
         "
       >
-        <img
-          src="img/tacos1.jpg"
-          alt="Taco al pastor"
-          style="width: 30%; min-width: 200px"
-        />
-        <img
-          src="img/tacos2.jpg"
-          alt="Taco de carne asada"
-          style="width: 30%; min-width: 200px"
-        />
-        <img
-          src="img/tacos3.jpg"
-          alt="Taco de pollo"
-          style="width: 30%; min-width: 200px"
-        />
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/web/tacos1.jpg" />
+          <source media="(min-width: 768px)" srcset="img/tablet/tacos1.jpg" />
+          <img
+            src="img/mobile/tacos1.jpg"
+            alt="Taco al pastor"
+            style="width: 30%; min-width: 200px"
+          />
+        </picture>
+
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/web/tacos2.jpg" />
+          <source media="(min-width: 768px)" srcset="img/tablet/tacos2.jpg" />
+          <img
+            src="img/mobile/tacos2.jpg"
+            alt="Taco de carne asada"
+            style="width: 30%; min-width: 200px"
+          />
+        </picture>
+
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/web/tacos3.jpg" />
+          <source media="(min-width: 768px)" srcset="img/tablet/tacos3.jpg" />
+          <img
+            src="img/mobile/tacos3.jpg"
+            alt="Taco de pollo"
+            style="width: 30%; min-width: 200px"
+          />
+        </picture>
       </section>
 
       <section style="padding: 1rem; max-width: 800px; margin: auto">
