@@ -47,7 +47,7 @@ footer {
   width: 100%;
   padding: 15px;
   font-size: .9rem;
-  position: relative;
+  position: absolute;
   bottom: 0;
 }
 
